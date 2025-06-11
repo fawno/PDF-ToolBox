@@ -1,0 +1,52 @@
+﻿@media print {
+	body { padding-top: initial !important; }
+	.modal-open .candidaturas { opacity: 0; }
+    .modal-content { border: none; margin-top: 2em; top: initial !important; left: initial !important; }
+    .modal-footer { display: none; }
+	.no-print { display: none !important; }
+	toolbox { display: none !important; }
+	.alert { display: none !important; }
+	.toolbox { display: none !important; }
+	.info-icon { display: none !important; }
+	a[href]:after {content: "";}
+	iframe { display: none !important; }
+	textarea {
+		width: 100% !important;
+		border: none !important;
+	}
+	button { display: none !important; }
+	input, select {
+		border: none !important;
+		-webkit-appearance: textfield !important;
+		-moz-appearance: textfield !important;
+		appearance: textfield !important;
+		margin: 0 !important;
+	}
+	.glyphicon-info-sign { display: none; }
+	abbr[title]:after { content: attr(rest); }
+	abbr[title] {
+		border-bottom: none !important;
+		cursor: inherit !important;
+		text-decoration: none !important;
+	}
+	.alert-info {
+		color: #31708f !important;
+		background-color: #d9edf7 !important;
+		border-color: #bce8f1 !important;
+	}
+	.alert-success {
+		color: #3c763d !important;
+		background-color: #dff0d8 !important;
+		border-color: #d6e9c6 !important;
+	}
+	.alert-danger {
+		color: #a94442 !important;
+		background-color: #f2dede !important;
+		border-color: #ebccd1 !important;
+	}
+	.alert-warning {
+		color: #8a6d3b !important;
+		background-color: #fcf8e3 !important;
+		border-color: #faebcc !important;
+	}
+}

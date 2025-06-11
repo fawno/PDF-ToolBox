@@ -1,0 +1,35 @@
+{
+    "name": "fawno/pdf-toolbox",
+    "description": "PDF ToolBox",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "fawno/fpdf": "^1.86",
+        "setasign/fpdi": "^2.6",
+        "cakephp/cakephp": "^4.3",
+        "holt59/cakephp4-bootstrap-helpers": "v3.x-dev",
+        "fawno/fawno-helpers": "^0.0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5 || ^9.3",
+        "cakephp/cakephp-codesniffer": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "PDFToolBox\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PDFToolBox\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "cakephp/plugin-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
