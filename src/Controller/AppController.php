@@ -69,7 +69,8 @@
 				$response = $this->response;
 				$response = $response->withDisabledCache();
 				$response = $response->withStringBody($pdf->Output('S'));
-				$response = $response->withType($media_type);
+				//$response = $response->withType($media_type);
+				$response = $response->withType('mime/pdf');
 				$response = $response->withDownload($filename);
 				return $response;
 
